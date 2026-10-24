@@ -25,9 +25,15 @@ If the app displays **DEMO WEATHER**, the values shown are sample data rather th
 
 ## Widgets look blank or out of date
 
-Open Weather Riot and allow a live forecast to load successfully. Widgets use the most recently loaded forecast from the app.
+After installing or updating Weather Riot, open the app and let a live forecast load once. This sets the location used by your Home Screen widgets.
 
-Apple controls when Home Screen widgets refresh, so changes may not appear immediately. If a widget remains blank, try removing it from your Home Screen and adding it again.
+Widgets can then request updated weather independently while the app is closed. They request refreshes approximately every 30 minutes, but Apple controls the actual timing. Updates may take longer depending on device conditions and usage.
+
+Widgets display weather for the last location loaded in the app. They do not track your movement in the background. To change the widget location, open Weather Riot and load weather for your current location or another city.
+
+If a refresh fails, widgets may temporarily display a saved forecast with its update time. Check your internet connection and open Weather Riot to load fresh weather.
+
+If a widget remains blank after live weather loads successfully, try removing it from your Home Screen and adding it again.
 
 ## Change your temperature units
 
