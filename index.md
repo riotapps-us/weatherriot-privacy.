@@ -1,6 +1,6 @@
 # Weather Riot Privacy Policy
 
-**Effective date: October 22, 2026**
+**Effective date: October 23, 2026**
 
 Weather Riot is developed by Christopher Bradford under the RIOT APPS name. This policy explains how Weather Riot handles information when you use the app and its Home Screen widgets.
 
@@ -22,9 +22,11 @@ Favorite place names and coordinates are saved locally on your device. You can r
 
 Weather Riot stores preferences, such as your temperature unit, on your device.
 
-The app shares the most recently loaded city name, weather forecast, update time, and temperature unit with its Home Screen widgets through on-device shared storage. Geographic coordinates are not included in this widget cache.
+The app shares the most recently loaded city name, weather forecast, update time, and temperature unit with its Home Screen widgets through on-device shared storage.
 
-Widgets may continue displaying the last successfully loaded location and forecast until updated data becomes available.
+The shared cache also includes the forecast location’s coordinates, rounded to two decimal places, so widgets can request updated weather directly from Apple WeatherKit while the app is closed. Widgets refresh the last loaded location; they do not track your movement or request background device location.
+
+Apple controls widget refresh timing. If a refresh fails, widgets may show the previously loaded forecast with its update time. Open the app and select another place to change the widget location.
 
 ## Apple services
 
